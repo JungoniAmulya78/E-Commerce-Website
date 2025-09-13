@@ -1,0 +1,574 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* ================================
+   MAIN NAVBAR
+================================ */
+.navbar {
+  background-color: #131921; /* Amazon-style dark blue */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Search bar */
+.nav-center {
+  display: flex;
+  flex: 1;
+  max-width: 600px;
+  margin: 0 20px;
+}
+
+.nav-center input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.search-btn, .camera-btn {
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  background: #febd69; /* Amazon yellow */
+}
+
+.search-btn:hover, .camera-btn:hover {
+  background: #f3a847;
+}
+
+/* Right side */
+.nav-right a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nav-right a:hover {
+  color: #febd69;
+}
+/*Navbar*/
+.navbar{
+    background-color: #232f3e;
+    width: 100%;
+    height: 80px;
+}
+
+/* ================================
+   CATEGORY MENU
+================================ */
+.category-menu {
+  background: #232f3e; /* dark menu bar like Amazon */
+}
+
+.category-menu ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 12px 0;
+  margin: 0;
+  list-style: none;
+}
+
+.category-menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.category-menu ul li a:hover {
+  color: #febd69;
+}
+
+/* ================================
+   BANNER
+================================ */
+.banner-section {
+  width: 100%;
+  max-width: 1600px; /* Prevents it from stretching too wide */
+  margin: 0px auto; /* Centers with spacing */
+  padding: 0 px;   /* Adds side breathing space */
+   
+}
+
+.banner-section img.homepage-banner {
+  width: 100%;
+  max-height: 550px; /* Controls banner height */
+  object-fit: cover; /* Crops instead of stretching */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+
+
+
+/* ================================
+   NEW PRODUCTS SECTION (1 row, 8 items)
+================================ */
+.category-section {
+  padding: 20px;
+  background-color: peachpuff;
+}
+
+.category-section h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.category-section ul {
+  display: flex;
+  flex-wrap: wrap;          /* wrap items instead of scroll */
+  justify-content: center;
+  gap: 15px;
+}
+
+.category-section ul li {
+  flex: 0 0 calc(12.5% - 15px);  /* exactly 8 per row */
+  list-style: none;
+  border: 2px solid red;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  padding: 10px;
+}
+
+.category-section ul li:hover {
+  transform: scale(1.05);
+}
+
+.category-section ul li img {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.category-section ul li p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* ================================
+   ARRIVAL SECTION
+================================ */
+.arrival-section {
+  padding: 20px;
+  background: #fef6f6;
+}
+
+.arrival-section h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.arrival-section ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 items per row */
+  grid-template-rows: repeat(2, auto);   /* 2 rows */
+  gap: 15px;
+  justify-items: center;
+}
+
+.arrival-section ul li {
+  list-style: none;
+  border: 2px solid #c62828;
+  border-radius: 8px;
+  background-color: #fff;
+  text-align: center;
+  padding: 10px;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.arrival-section ul li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(198,40,40,0.25);
+}
+
+.arrival-section ul li img {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+}
+
+.arrival-list p {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* ================================
+   DISCOUNT SECTION
+================================ */
+.discount-section {
+  position: relative;
+  padding: 20px;
+  background: #f5f9ff;
+}
+
+.discount-section h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.discount-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+  align-items: stretch;
+}
+
+.discount-card {
+  min-width: 220px;
+  flex: 0 0 220px;
+  border: 1px solid red;
+  border-radius: 8px;
+  background: #fff;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.discount-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.discount-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  min-height: 40px;
+}
+
+.discount-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin: 10px auto;
+}
+
+.price {
+  margin: 10px 0;
+  font-size: 16px;
+}
+.old-price {
+  text-decoration: line-through;
+  color: gray;
+  margin-right: 8px;
+}
+.new-price {
+  color: red;
+  font-weight: bold;
+}
+
+.discount-card ul {
+  list-style: none;
+  padding: 0;
+  margin-top: auto;
+  text-align: left;
+  font-size: 14px;
+  min-height: 40px;
+}
+.discount-card ul li {
+  margin: 3px 0;
+}
+
+/* Scroll Buttons */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 2;
+}
+.left-btn { left: 10px; }
+.right-btn { right: 10px; }
+.scroll-btn:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+/* ================================
+   FOOTER SECTION
+================================ */
+.footer-section {
+  background: #111;
+  color: #ddd;
+  padding: 40px 20px 20px;
+  margin-top: 30px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-col h3 {
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #333;
+  margin-top: 20px;
+  padding-top: 15px;
+  font-size: 13px;
+  color: #aaa;
+}
+
+/* ================================
+   PRODUCT DETAILS PAGE
+================================ */
+.product-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* -----------------
+   IMAGE SECTION
+----------------- */
+.product-image {
+  flex: 1;
+  text-align: center;
+}
+
+.product-image img {
+  max-width: 350px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* -----------------
+   DETAILS SECTION
+----------------- */
+.product-details {
+  flex: 2;
+}
+
+.product-details h1, 
+.product-details h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.rating {
+  color: #ff9800;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+/* -----------------
+   PRICE STYLING
+----------------- */
+.price {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 15px;
+}
+
+.new-price {
+  color: #e53935;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.discount {
+  color: green;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* -----------------
+   OFFERS SECTION
+----------------- */
+.offers {
+  margin: 15px 0;
+}
+
+.offer-box {
+  background: #f7f7f7;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* -----------------
+   PRODUCT FEATURES
+----------------- */
+.product-details ul {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+.product-details ul li {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+/* -----------------
+   HIGHLIGHTS
+----------------- */
+.product-highlights {
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+/* -----------------
+   BUY SECTION
+----------------- */
+.buy-section {
+  margin-top: 20px;
+  background: #fafafa;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.buy-section label {
+  font-weight: bold;
+}
+
+.buy-section select, 
+.buy-section button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+}
+
+.add-cart {
+  background: #FFD700;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-cart:hover {
+  background: #f7ca00;
+}
+
+.buy-now {
+  background: orange;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buy-now:hover {
+  background: #e68a00;
+}
+/* Remove underline & keep text clean */
+.product-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Product name styling */
+.product-link p {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  transition: color 0.3s ease; /* smooth color change */
+}
+
+/* Hover effect */
+.product-link:hover p {
+  color:red; /* orange on hover (you can pick any color) */
+}
+/* Full Width  after arrival section Banner Section */
+.banner-section {
+  width: 100vw;      /* full viewport width */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;  /* avoid scrollbars if image overflows */
+}
+
+.banner-section img {
+  width: 100%;
+  height: auto;
+  display: block;    /* removes inline gap under image */
+  border-radius: 0;  /* no rounded corners */
+   object-fit: cover; /* fills without leaving gaps */
+}
+
