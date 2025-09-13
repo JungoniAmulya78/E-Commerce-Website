@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samsung Galaxy S23 - Product Details</title>
+  <link rel="stylesheet" href="../samsung.css">
+  <script defer src="../samsung.js"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">ShopNow</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="#">Categories</a>
+      <a href="#">Deals</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="search-cart">
+      <input type="text" placeholder="Search products...">
+      <button class="cart-btn">🛒</button>
+    </div>
+  </header>
+
+  <!-- Product Section -->
+  <section class="product-page">
+
+    <!-- Left: Image Gallery -->
+    <div class="gallery">
+      <img id="main-img" src="../arrivals/samsung.webp" alt="Samsung Galaxy S23">
+      <div class="thumbnails">
+        <img src="/arrivals/samsung front.png" alt="Front View" onclick="changeImage(this)">
+        <img src="/arrivals/samsung back.png" alt="Back View" onclick="changeImage(this)">
+        <img src="/arrivals/samsung back .png" alt="Side View" onclick="changeImage(this)">
+        <img src="/arrivals/samsung box.png" alt="Box Contents" onclick="changeImage(this)">
+      </div>
+    </div>
+
+    <!-- Middle: Product Details -->
+    <div class="details">
+      <h1>Samsung Galaxy S23</h1>
+      <div class="rating">⭐⭐⭐⭐☆ (12,842 reviews)</div>
+      <div class="price">
+        <span class="old-price">₹89,999</span>
+        <span class="new-price">₹74,999</span>
+        <span class="discount">17% OFF</span>
+      </div>
+
+      <div class="offers">
+        <p>💳 Bank Offer: 10% Instant Discount</p>
+        <p>🚚 Free Delivery & Installation</p>
+        <p>🔄 7 Days Replacement</p>
+      </div>
+
+      <ul class="features">
+        <li>6.6-inch Dynamic AMOLED Display</li>
+        <li>256GB Storage, 8GB RAM</li>
+        <li>50MP + 12MP + 10MP Pro Cameras</li>
+        <li>4700mAh Battery with 45W Fast Charging</li>
+        <li>2 Years Warranty</li>
+      </ul>
+    </div>
+
+    <!-- Right: Buy Box -->
+    <div class="buy-box">
+      <p><strong>In Stock.</strong></p>
+      <label for="qty">Quantity:</label>
+      <select id="qty">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+      </select>
+      <button class="cart-btn">Add to Cart</button>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+  </section>
+
+  <!-- Tabs Section -->
+  <section class="tabs">
+    <div class="tab-buttons">
+      <button class="tab active" onclick="openTab('description')">Description</button>
+      <button class="tab" onclick="openTab('specs')">Specifications</button>
+      <button class="tab" onclick="openTab('reviews')">Reviews</button>
+    </div>
+
+    <div class="tab-content active" id="description">
+      <h2>Product Description</h2>
+      <p>The Samsung Galaxy S23 comes with a stunning AMOLED display, pro-grade cameras, and all-day battery life. Perfect for gamers, photographers, and professionals alike.</p>
+    </div>
+
+    <div class="tab-content" id="specs">
+      <h2>Specifications</h2>
+      <ul>
+        <li>Display: 6.6-inch AMOLED, 120Hz</li>
+        <li>Processor: Snapdragon 8 Gen 2</li>
+        <li>RAM: 8GB</li>
+        <li>Storage: 256GB</li>
+        <li>Battery: 4700mAh, 45W Fast Charging</li>
+        <li>OS: Android 14</li>
+      </ul>
+    </div>
+
+    <div class="tab-content" id="reviews">
+      <h2>Customer Reviews</h2>
+      <p>⭐⭐⭐⭐⭐ Amazing phone! Worth every penny. - Aakash</p>
+      <p>⭐⭐⭐⭐ Good performance but camera could be better. - Priya</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 ShopNow. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

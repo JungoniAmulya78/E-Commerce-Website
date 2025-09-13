@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laptop - Product Details</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background: #232f3e;
+      color: #fff;
+    }
+    .navbar .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .navbar a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Product Layout */
+    .product-container {
+      display: grid;
+      grid-template-columns: 1.2fr 1.5fr 1fr;
+      max-width: 1300px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      gap: 30px;
+    }
+
+    /* Left Image */
+    .product-image img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    /* Middle Details */
+    .product-details h1 {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+    .rating {
+      color: #ff9900;
+      font-size: 16px;
+      margin: 5px 0 15px 0;
+    }
+    .price-box {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+    .old-price {
+      text-decoration: line-through;
+      color: #777;
+      margin-right: 10px;
+    }
+    .new-price {
+      font-size: 26px;
+      color: #b12704;
+      font-weight: bold;
+    }
+    .discount {
+      color: green;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+
+    /* Offers */
+    .offers {
+      margin: 20px 0;
+    }
+    .offer-card {
+      background: #f7f7f7;
+      border: 1px solid #ddd;
+      padding: 10px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    /* Features */
+    .features {
+      margin: 20px 0;
+      padding-left: 20px;
+    }
+    .features li {
+      margin-bottom: 8px;
+    }
+
+    /* Service Row */
+    .service-row {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0;
+      text-align: center;
+    }
+    .service-row div {
+      flex: 1;
+      padding: 10px;
+      font-size: 14px;
+      border-right: 1px solid #ddd;
+    }
+    .service-row div:last-child {
+      border: none;
+    }
+
+    /* Right Purchase Box */
+    .purchase-box {
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    .purchase-box p {
+      margin: 10px 0;
+      font-size: 14px;
+    }
+    .purchase-box select {
+      padding: 6px;
+      margin: 10px 0;
+      width: 100%;
+    }
+    .purchase-box button {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .cart-btn {
+      background: #ffd814;
+    }
+    .buy-btn {
+      background: #ffa41c;
+      color: #fff;
+    }
+    .cart-btn:hover {
+      background: #f7ca00;
+    }
+    .buy-btn:hover {
+      background: #e68a00;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">ShopNow</div>
+    <div class="nav-right">
+      <a href="#">Login</a>
+      <a href="#">Orders</a>
+      <a href="#">Cart 🛒</a>
+    </div>
+  </header>
+
+  <!-- Product Section -->
+  <div class="product-container">
+
+    <!-- Left: Image -->
+    <div class="product-image">
+      <img src="../assets/laptop.webp" alt="Laptop">
+    </div>
+
+    <!-- Middle: Details -->
+    <div class="product-details">
+      <h1>High-Performance Laptop</h1>
+      <div class="rating">⭐⭐⭐⭐☆ (2,314 ratings)</div>
+      <div class="price-box">
+        <span class="old-price">₹65,000</span>
+        <span class="new-price">₹54,999</span>
+        <span class="discount">15% off</span>
+      </div>
+
+      <!-- Offers -->
+      <div class="offers">
+        <div class="offer-card">💳 Cashback: Up to ₹2,000 on Credit Cards</div>
+        <div class="offer-card">🏦 Bank Offer: 10% Instant Discount</div>
+        <div class="offer-card">📦 No Cost EMI available</div>
+      </div>
+
+      <!-- Features -->
+      <ul class="features">
+        <li>Intel Core i7 Processor</li>
+        <li>16GB RAM</li>
+        <li>1TB SSD Storage</li>
+        <li>15.6" FHD Display</li>
+        <li>NVIDIA GTX Graphics</li>
+      </ul>
+
+      <!-- Services -->
+      <div class="service-row">
+        <div>🚚 Free Delivery</div>
+        <div>🔄 10 Days Replacement</div>
+        <div>🛡️ 1 Year Warranty</div>
+        <div>🏆 Top Brand</div>
+      </div>
+    </div>
+
+    <!-- Right: Purchase Box -->
+    <div class="purchase-box">
+      <p><strong>In stock.</strong></p>
+      <p>Ships from: ShopNow</p>
+      <label for="qty">Quantity:</label>
+      <select id="qty">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+      </select>
+      <button class="cart-btn">Add to Cart</button>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+  </div>
+
+</body>
+</html> 
